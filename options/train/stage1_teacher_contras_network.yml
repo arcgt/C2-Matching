@@ -11,8 +11,8 @@ datasets:
   train:
     name: CUFED
     type: ContrasDataset
-    dataroot_in: ./datasets/CUFED/input
-    dataroot_ref: ./datasets/CUFED/ref
+    dataroot_in: /scratch_net/rind/tian/c2_matching/dataset/train_CUFED/input
+    dataroot_ref: /scratch_net/rind/tian/c2_matching/dataset/train_CUFED/ref
     io_backend:
       type: disk
 
@@ -29,8 +29,8 @@ datasets:
   val:
     name: val_CUFED
     type: ContrasValDataset
-    dataroot_in: ./datasets/CUFED5
-    dataroot_ref: ./datasets/CUFED5
+    dataroot_in: /scratch_net/rind/tian/c2_matching/dataset/test_CUFED5
+    dataroot_ref: /scratch_net/rind/tian/c2_matching/dataset/test_CUFED5
     io_backend:
       type: disk
 

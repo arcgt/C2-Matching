@@ -65,7 +65,7 @@ def main():
     # initialize tensorboard logger
     tb_logger = None
     if opt['use_tb_logger'] and 'debug' not in opt['name']:
-        tb_logger = init_tb_logger(log_dir='./tb_logger/' + opt['name'])
+        tb_logger = init_tb_logger(log_dir='/scratch_net/rind/tian/c2_matching/tb_logger/' + opt['name'])
 
     # convert to NoneDict, which returns None for missing keys
     opt = dict_to_nonedict(opt)
